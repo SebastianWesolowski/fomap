@@ -1,11 +1,22 @@
-console.clear();
-
-
-// const ingredients = require('./ingredients.js');
+const ingredients = require('./ingredients.js');
 const nutritional = require('./nutritional.js');
 
+const ingredientsList = ingredients.map(({ Id, NameEn, NutritionalIngredientsId }) => {
+  const arrayElet = [];
+  const arrayElement = NutritionalIngredientsId;
 
-const nutritionalItems = nutritional.filter(item => item.value > 1);
+  arrayElement.forEach((element) => {
+    const getNutritional = nutritional.find(({ Id }) => Id === element);
 
-console.clear();
-console.log(nutritionalItems);
+    return arrayElet.push(getNutritional);
+  });
+
+  const arrAll = arrayElet.map(({ Id, nameEn, Value }) => {
+    return `${Id} | ${nameEn} |  ${Value}`
+  });
+
+
+  return `${Id} | ${NameEn} |  ${arrAll}`
+})
+
+console.log(ingredientsList);
