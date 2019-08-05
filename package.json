@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SebastianWesolowski/fomap.git"
+    "url": "https://github.com/Seyarn sbastianWesolowski/fomap.git"
   },
   "author": "Sarutobi69, Sebastian Wesołowski <sebastian.wesolowski.sw@gmail.com>, <sebastian@wesolowski.dev>",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "url": "https://github.com/SebastianWesolowski/fomap/issues"
   },
   "scripts": {
-    "start": "concurrently --kill-others \"yarn run serve ./app\" \"yarn run nodemon ./app -q\""
+    "start": "concurrently --kill-others \"yarn run serve ./app\" \"yarn run nodemon ./app/js -q\""
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
