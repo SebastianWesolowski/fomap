@@ -2,7 +2,7 @@
   "name": "fomap",
   "version": "0.1.0",
   "description": "MVP fomap",
-  "main": "index.js",
+  "main": "./app/aplication/DietApp/src/index.html",
   "repository": {
     "type": "git",
     "url": "https://github.com/Seyarn sbastianWesolowski/fomap.git"
@@ -15,7 +15,8 @@
     "url": "https://github.com/SebastianWesolowski/fomap/issues"
   },
   "scripts": {
-    "start": "concurrently --kill-others \"yarn run serve ./app\" \"yarn run nodemon ./app/js -q\""
+    "start": "concurrently --kill-others \"yarn run serve ./app\" \"yarn run nodemon ./app/js -q\"",
+    "install": "cd ./app/aplication/DietApp && npm install"
   },
   "dependencies": {
     "babel-eslint": "^10.0.1",
