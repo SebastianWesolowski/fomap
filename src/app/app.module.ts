@@ -12,7 +12,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import {
   MatCardModule,
   MatButtonModule,
-  MatProgressSpinnerModule,
+  MatProgressSpinnerModule
 } from '@angular/material';
 
 // import { OverlayContainer } from '@angular/cdk/overlay';
@@ -28,9 +28,9 @@ import {
     MatCardModule,
     MatButtonModule,
     MatProgressSpinnerModule,
-    DragDropModule,
+    DragDropModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

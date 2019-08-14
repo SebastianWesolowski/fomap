@@ -11,8 +11,8 @@ export const environment = {
     projectId: 'fomap-f430b',
     storageBucket: 'fomap-f430b.appspot.com',
     messagingSenderId: '812148066901',
-    appId: '1:812148066901:web:887b39df646a8bb9',
-  },
+    appId: '1:812148066901:web:887b39df646a8bb9'
+  }
 };
 /*
  * For easier debugging in development mode, you can import the following file
