@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig = {
+  firebase: {
     apiKey: 'AIzaSyB8O5OB1yn37L2Aj50KHf2-z6ZCNDM0-sk',
     authDomain: 'fomap-f430b.firebaseapp.com',
     databaseURL: 'https://fomap-f430b.firebaseio.com',
@@ -14,7 +14,6 @@ export const environment = {
     appId: '1:812148066901:web:887b39df646a8bb9',
   },
 };
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
