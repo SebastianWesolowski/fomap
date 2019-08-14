@@ -6,6 +6,8 @@
   "editor.cursorBlinking": "smooth",
   "editor.detectIndentation": true,
   "editor.fontLigatures": true,
+  "html.format.enable": false,
+  "editor.formatOnPaste": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "files.eol": "\r\n",

@@ -13,5 +13,8 @@ export class AppComponent {
   // this.items = db.collection('items').valueChanges();
   // }
 
+  isClicked = null;
+  dawid = true;
+
   title = 'DietApp';
 }
