@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AngularFireModule } from 'angularfire2';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -18,6 +20,7 @@ import { from } from 'rxjs';
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    AngularFireModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
