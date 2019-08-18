@@ -1,4 +1,5 @@
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,6 +23,7 @@ import {
   declarations: [AppComponent],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     CoreModule,
     IngredientsModule,
     BrowserModule,
