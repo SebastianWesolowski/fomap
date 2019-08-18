@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { CoreModule } from './core/core.module';
+import { IngredientsModule } from './ingredients/ingredients.module';
 
 import {
   MatCardModule,
@@ -22,6 +23,7 @@ import {
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
     CoreModule,
+    IngredientsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

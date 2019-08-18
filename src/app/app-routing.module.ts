@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './core/dashboard/dashboard.component';
-import { IngredientsComponent } from './core/ingredients/ingredients.component';
+import { IngredientsComponent } from './ingredients/ingredients.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'ingredients', component: IngredientsComponent }
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [
+      { path: '', redirectTo: 'ingredients', pathMatch: 'full' },
+      { path: 'ingredients', component: IngredientsComponent }
+    ]
+  }
 ];
 
 @NgModule({
