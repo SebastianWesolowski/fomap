@@ -9,19 +9,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
+import { CoreModule } from './core/core.module';
+
 import {
   MatCardModule,
   MatButtonModule,
   MatProgressSpinnerModule
 } from '@angular/material';
 
-// import { OverlayContainer } from '@angular/cdk/overlay';
-// import { from } from 'rxjs';
-
 @NgModule({
   declarations: [AppComponent],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
+    CoreModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
