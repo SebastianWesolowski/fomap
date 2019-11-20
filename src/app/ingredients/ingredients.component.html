@@ -1,1 +1,6 @@
 <p>ingredients works!</p>
+<div *ngFor="let ingredient of ingredientsObject" class="ingredients">
+  <div (click)="showList(ingredient)" class="ingredients-name">
+    {{ ingredient.NameEn }}
+  </div>
+</div>
